@@ -13,7 +13,7 @@ of compiling chaincode and driving calls.
 Install Fabric Samples
 ----------------------
 
-If you haven't already done so, please install the [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/release-1.1/samples.html).
+If you haven't already done so, please install the `Hyperledger Fabric Samples_ https://hyperledger-fabric.readthedocs.io/en/release-1.1/samples.html.
 
 Navigate to the ``chaincode-docker-devmode`` directory of the ``fabric-samples``
 clone:
@@ -27,12 +27,12 @@ Download docker images
 
 We need four docker images in order for "dev mode" to run against the supplied
 docker compose script.  If you installed the ``fabric-samples`` repo clone and
-followed the instructions to [download-platform-specific-binaries](http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#download-platform-specific-binaries), then
+followed the instructions to `download-platform-specific-binaries_ http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#download-platform-specific-binaries, then
 you should have the necessary Docker images installed locally.
 
-Hyperledger Fabric does not provide 'latest' tag for the docker images (see [FAB-8338](https://jira.hyperledger.org/browse/FAB-8338) for reference), which means that one has to specify tag explicitly when pulling the images.
+Hyperledger Fabric does not provide 'latest' tag for the docker images (see `FAB-8338_ https://jira.hyperledger.org/browse/FAB-8338 for reference), which means that one has to specify tag explicitly when pulling the images.
 
-This repository provides default tag via [docker-compose environment variables](https://docs.docker.com/compose/environment-variables/). 
+This repository provides default tag via `docker-compose environment variables_ https://docs.docker.com/compose/environment-variables/. 
 The default tag is specified in the `.env <.env>`_ file.
 
 If you want to use different tag either update `.env <.env>`_ file, or override the TAG variable while running docker-compose. 
@@ -41,7 +41,7 @@ If you want to use different tag either update `.env <.env>`_ file, or override 
 
   TAG=1.1.0-pre docker-compose -f docker-compose-simple.yaml up
 
-.. note:: If you retrieved the images through the [download-platform-specific-binaries](http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#download-platform-specific-binaries),
+.. note:: If you retrieved the images through the `download-platform-specific-binaries_ http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#download-platform-specific-binaries,
           then you will see additional images listed.  However, we are only concerned with
           these four.
 
