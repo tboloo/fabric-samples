@@ -13,7 +13,7 @@ of compiling chaincode and driving calls.
 Install Fabric Samples
 ----------------------
 
-If you haven't already done so, please install the `Hyperledger Fabric Samples`_ https://hyperledger-fabric.readthedocs.io/en/release-1.1/samples.html.
+If you haven't already done so, please install the .. _`Hyperledger Fabric Samples`: https://hyperledger-fabric.readthedocs.io/en/release-1.1/samples.html.
 
 Navigate to the ``chaincode-docker-devmode`` directory of the ``fabric-samples``
 clone:
