@@ -33,9 +33,9 @@ you should have the necessary Docker images installed locally.
 Hyperledger Fabric does not provide 'latest' tag for the docker images (see [FAB-8338](https://jira.hyperledger.org/browse/FAB-8338) for reference), which means that one has to specify tag explicitly when pulling the images.
 
 This repository provides default tag via [docker-compose environment variables](https://docs.docker.com/compose/environment-variables/). 
-The default tag is specified in the `local mirror <.env>`_ file.
+The default tag is specified in the `.env <.env>`_ file.
 
-If you want to use different tag either update `local mirror <.env>`_ file, or override the TAG variable while running docker-compose. 
+If you want to use different tag either update `.env <.env>`_ file, or override the TAG variable while running docker-compose. 
 
 .. code:: bash
   TAG=1.1.0-pre docker-compose -f docker-compose-simple.yaml up
