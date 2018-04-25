@@ -13,7 +13,7 @@ of compiling chaincode and driving calls.
 Install Fabric Samples
 ----------------------
 
-If you haven't already done so, please install the doc [samples](http://hyperledger-fabric.readthedocs.io/en/latest/samples.html).
+If you haven't already done so, please install the [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/release-1.1/samples.html).
 
 Navigate to the ``chaincode-docker-devmode`` directory of the ``fabric-samples``
 clone:
@@ -29,10 +29,13 @@ We need four docker images in order for "dev mode" to run against the supplied
 docker compose script.  If you installed the ``fabric-samples`` repo clone and
 followed the instructions to [download-platform-specific-binaries](http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#download-platform-specific-binaries), then
 you should have the necessary Docker images installed locally.
+
 Hyperledger Fabric does not provide 'latest' tag for the docker images (see [FAB-8338](https://jira.hyperledger.org/browse/FAB-8338) for reference), which means that one has to specify tag explicitly when pulling the images.
+
 This repository provides default tag via [docker-compose environment variables](https://docs.docker.com/compose/environment-variables/). 
-The default tag is specified in the [.env](.env) file.
-If you want to use different tag either update [.env](.env) file, or ovveride the TAG variable while running docker-compose, like 
+The default tag is specified in the `local mirror <.env>`_ file.
+
+If you want to use different tag either update `local mirror <.env>`_ file, or override the TAG variable while running docker-compose. 
 
 .. code:: bash
   TAG=1.1.0-pre docker-compose -f docker-compose-simple.yaml up
