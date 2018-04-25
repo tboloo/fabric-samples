@@ -38,6 +38,7 @@ The default tag is specified in the `.env <.env>`_ file.
 If you want to use different tag either update `.env <.env>`_ file, or override the TAG variable while running docker-compose. 
 
 .. code:: bash
+
   TAG=1.1.0-pre docker-compose -f docker-compose-simple.yaml up
 
 .. note:: If you retrieved the images through the [download-platform-specific-binaries](http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#download-platform-specific-binaries),
